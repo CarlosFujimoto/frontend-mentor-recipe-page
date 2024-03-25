@@ -5,16 +5,13 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,10 +28,16 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- [Tailwind](https://tailwindcss.com/) - CSS Framework
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+  "/>
+
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+">
+
+<a href="https://tailwindcss.com/" target=_blank>
+<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+  "/>
+</a>
 
 ### Continued development
 
@@ -47,7 +50,3 @@ I'm creating a project from scratch called "timeline", and I need to migrate the
 ## Author
 
 - Frontend Mentor - [@CarlosFujimoto](https://www.frontendmentor.io/profile/CarlosFujimoto)
-
-## Thanks
-
-Don't stop studying and don't even get discouraged if you don't understand something at first, it's normal to have difficulties.
