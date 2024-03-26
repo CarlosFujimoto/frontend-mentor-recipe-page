@@ -1,145 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <!-- Import Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Import Font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
-    rel="stylesheet">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Tailwind customize -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          //Custom Fonts
-          fontFamily: {
-            outfit: ["Outfit", "sans-serif"],
-            yserif: ["Young Serif", "serif"]
+    <!-- Tailwind customize -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            //Custom Fonts
+            fontFamily: {
+              outfit: ["Outfit", "sans-serif"],
+              yserif: ["Young Serif", "serif"],
+            },
+            //Custom Colors
+            colors: {
+              //Primary
+              nutmeg: "hsl(14, 45%, 36%)",
+              darkraspberry: "hsl(332, 51%, 32%)",
+              //Neutral
+              rosewhite: "hsl(330, 100%, 98%)",
+              eggshell: "hsl(30, 54%, 90%)",
+              lightgrey: "hsl(30, 18%, 87%)",
+              wengebrown: "hsl(30, 10%, 34%)",
+              darkcharcoal: "hsl(24, 5%, 18%)",
+            },
           },
-          //Custom Colors
-          colors: {
-            //Primary
-            nutmeg: 'hsl(14, 45%, 36%)',
-            darkraspberry: 'hsl(332, 51%, 32%)',
-            //Neutral
-            rosewhite: 'hsl(330, 100%, 98%)',
-            eggshell: 'hsl(30, 54%, 90%)',
-            lightgrey: 'hsl(30, 18%, 87%)',
-            wengebrown: 'hsl(30, 10%, 34%)',
-            darkcharcoal: 'hsl(24, 5%, 18%)'
-          }
-        }
-      }
-    }
-  </script>
+        },
+      };
+    </script>
 
-  <title>Frontend Mentor | Recipe page</title>
-</head>
+    <title>Frontend Mentor | Recipe page</title>
+  </head>
 
-<body class="bg-eggshell text-base text-wengebrown font-outfit">
+  <body class="bg-eggshell text-wengebrown font-outfit text-base">
+    <main class="justify-center md:flex">
+      <div
+        class="m-5 max-w-7xl rounded-lg bg-white lg:container md:w-2/5 lg:mx-auto"
+      >
+        <div class="m-5 p-5">
+          <div class="w-auto">
+            <img
+              src="assets/images/image-omelette.jpeg"
+              alt="omelette-image"
+              class="rounded-lg"
+            />
+          </div>
+          <h1 class="font-yserif text-darkcharcoal my-5 text-4xl">
+            Simple Omelette Recipe
+          </h1>
+          <p>
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </p>
+          <div class="bg-rosewhite my-10 space-y-2.5 rounded-lg p-2.5">
+            <h2 class="text-darkraspberry m-2.5 text-xl font-semibold">
+              Preparation time
+            </h2>
 
-  <main class="md:flex justify-center">
-    <div class="lg:container lg:mx-auto max-w-7xl	md:w-2/5 bg-white m-5 rounded-lg">
-      <div class="m-5 p-5">
-        <div class="w-auto">
-          <img src="assets/images/image-omelette.jpeg" alt="omelette-image" class="rounded-lg">
-        </div>
-        <h1 class="font-yserif my-5 text-4xl text-darkcharcoal">Simple Omelette Recipe</h1>
-        <p>
-          An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
-          to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-        </p>
-        <div class=" p-2.5 my-10 bg-rosewhite space-y-2.5 rounded-lg">
-          <h2 class="m-2.5 text-darkraspberry font-semibold text-xl">Preparation time</h2>
+            <ul
+              class="marker:text-darkraspberry m-7 list-inside list-disc space-y-2"
+            >
+              <li><strong>Total:</strong> Approximately 10 minutes</li>
+              <li><strong>Preparation:</strong> 5 minutes</li>
+              <li><strong>Cooking:</strong> 5 minutes</li>
+            </ul>
+          </div>
+          <div class="border-lightgrey m-5 border-b border-solid">
+            <h2 class="font-yserif text-nutmeg text-3xl">Ingredients</h2>
 
-          <ul class="m-7 space-y-2 list-disc list-inside marker:text-darkraspberry">
-            <li><strong>Total:</strong> Approximately 10 minutes</li>
-            <li><strong>Preparation:</strong> 5 minutes</li>
-            <li><strong>Cooking:</strong> 5 minutes</li>
-          </ul>
-        </div>
-        <div class="m-5 border-b  border-solid border-lightgrey">
-          <h2 class="font-yserif text-3xl text-nutmeg">Ingredients</h2>
+            <ul
+              class="marker marker:text-nutmeg m-5 list-inside list-disc space-y-2"
+            >
+              <li>2-3 large eggs</li>
+              <li>Salt, to taste</li>
+              <li>Pepper, to taste</li>
+              <li>1 tablespoon of butter or oil</li>
+              <li>
+                Optional fillings: cheese, diced vegetables, cooked meats, herbs
+              </li>
+            </ul>
+          </div>
+          <div class="border-lightgrey m-5 space-y-2 border-b border-solid">
+            <h2 class="font-yserif text-nutmeg text-3xl">Instructions</h2>
 
-          <ul class="list-disc list-inside marker m-5 space-y-2 marker:text-nutmeg">
-            <li>2-3 large eggs</li>
-            <li>Salt, to taste</li>
-            <li>Pepper, to taste</li>
-            <li>1 tablespoon of butter or oil</li>
-            <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-          </ul>
-        </div>
-        <div class="m-5 space-y-2 border-b  border-solid border-lightgrey">
-          <h2 class="font-yserif text-3xl text-nutmeg ">Instructions</h2>
-
-          <ul class="space-y-2 list-decimal list-inside m-5 py-5 marker:text-nutmeg marker:font-semibold ">
-            <li>
-              <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are
-              well mixed.
-              You can add a tablespoon of water or milk for a fluffier texture.
-            </li>
-            <li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
-            <li>
-              <strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan
-              to ensure
-              the eggs evenly coat the surface.
-            </li>
-            <li>
-              <strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly
-              runny in the
-              middle, sprinkle your chosen fillings over one half of the omelette.
-            </li>
-            <li>
-              <strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it
-              over the
-              fillings. Let it cook for another minute, then slide it onto a plate.
-            </li>
-            <li><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
-          </ul>
-        </div>
-        <div class="space-y-2 m-5">
-          <h2 class="font-yserif text-3xl font text-nutmeg ">Nutrition</h2>
-          <p>The table below shows nutritional values per serving without the additional fillings.</p>
-          <table class="max-w-full w-full	">
-            <tbody class="flex flex-row w-full">
-              <tr class="flex flex-col w-1/2 space-y-3">
-                <td class="border-b border-solid border-lightgrey">Calories</td>
-                <td class="border-b border-solid border-lightgrey">Carbs</td>
-                <td class="border-b border-solid border-lightgrey">Protein</td>
-                <td class="border-b border-solid border-lightgrey">Fat</td>
-              </tr>
-              <tr class="flex flex-col w-1/2 space-y-3 text-nutmeg font-semibold">
-                <td class="border-b border-solid border-lightgrey">277kcal</td>
-                <td class="border-b border-solid border-lightgrey">0g</td>
-                <td class="border-b border-solid border-lightgrey">20g</td>
-                <td class="border-b border-solid border-lightgrey">22g</td>
-              </tr>
-            </tbody>
-          </table>
+            <ul
+              class="marker:text-nutmeg m-5 list-inside list-decimal space-y-2 py-5 marker:font-semibold"
+            >
+              <li>
+                <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
+                pinch of salt and pepper until they are well mixed. You can add
+                a tablespoon of water or milk for a fluffier texture.
+              </li>
+              <li>
+                <strong>Heat the pan:</strong> Place a non-stick frying pan over
+                medium heat and add butter or oil.
+              </li>
+              <li>
+                <strong>Cook the omelette:</strong> Once the butter is melted
+                and bubbling, pour in the eggs. Tilt the pan to ensure the eggs
+                evenly coat the surface.
+              </li>
+              <li>
+                <strong>Add fillings (optional):</strong> When the eggs begin to
+                set at the edges but are still slightly runny in the middle,
+                sprinkle your chosen fillings over one half of the omelette.
+              </li>
+              <li>
+                <strong>Fold and serve:</strong> As the omelette continues to
+                cook, carefully lift one edge and fold it over the fillings. Let
+                it cook for another minute, then slide it onto a plate.
+              </li>
+              <li>
+                <strong>Enjoy:</strong> Serve hot, with additional salt and
+                pepper if needed.
+              </li>
+            </ul>
+          </div>
+          <div class="m-5 space-y-2">
+            <h2 class="font-yserif font text-nutmeg text-3xl">Nutrition</h2>
+            <p>
+              The table below shows nutritional values per serving without the
+              additional fillings.
+            </p>
+            <table class="w-full max-w-full">
+              <tbody class="flex w-full flex-row">
+                <tr class="flex w-1/2 flex-col space-y-3">
+                  <td class="border-lightgrey border-b border-solid">
+                    Calories
+                  </td>
+                  <td class="border-lightgrey border-b border-solid">Carbs</td>
+                  <td class="border-lightgrey border-b border-solid">
+                    Protein
+                  </td>
+                  <td class="border-lightgrey border-b border-solid">Fat</td>
+                </tr>
+                <tr
+                  class="text-nutmeg flex w-1/2 flex-col space-y-3 font-semibold"
+                >
+                  <td class="border-lightgrey border-b border-solid">
+                    277kcal
+                  </td>
+                  <td class="border-lightgrey border-b border-solid">0g</td>
+                  <td class="border-lightgrey border-b border-solid">20g</td>
+                  <td class="border-lightgrey border-b border-solid">22g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer class="justify-center items-center text-center text-xs">
-    <div>
-      <p>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          class="text-darkraspberry">Frontend Mentor</a>.
-        Coded by <a href="https://github.com/CarlosFujimoto" target="_blank" class="text-darkraspberry">Carlos
-          Fujimoto</a>.
-      </p>
-    </div>
-  </footer>
-</body>
-
+    </main>
+    <footer class="items-center justify-center text-center text-xs">
+      <div>
+        <p>
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            class="text-darkraspberry"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            href="https://github.com/CarlosFujimoto"
+            target="_blank"
+            class="text-darkraspberry"
+            >Carlos Fujimoto</a
+          >.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
